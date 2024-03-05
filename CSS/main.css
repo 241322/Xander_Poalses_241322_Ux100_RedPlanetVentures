@@ -13,30 +13,150 @@ body{
     margin: 0px;
 }
 
+.navdiv{
+    float: right;
+
+}
+nav{
+    background-color: grey;
+}
+.navdiv a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(65, 115, 0);
+    padding: 5px;
+    margin: 1px;
+    border: 1px solid;
+    border-color: #ffe371;
+    border-radius: 50%;
+}
+
+.navdiv a:hover{
+    background-color: rgb(42, 73, 2);
+    border-color: black;
+}
+
+.navdiv .active{
+    color: #ffe371;
+}
 
 
+.links{
+}
+
+header img{
+    width: 100%;
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+    opacity: 75%;
+    border-radius: 20px;
+}
 
 
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #04aa6d;
+    text-align: justify;
 
+}
 
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
+.text{
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
+.imgTextOverlay{
+    position: relative;
+    text-align: center;
 
+    color: #fff;
+    font-size: 40px;
+}
 
+.imgTextOverlay img{
+    width: 100%;
+}
 
+.bottomLeft{
+    position:absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.topLeft{
+    position:absolute;
+    top: 8px;
+    left: 16px;
+}
 
+.topRight{
+    position:absolute;
+    top: 8px;
+    right: 16px;
+}
 
+.bottomRight{
+    position:absolute;
+    bottom: 8px;
+    right: 16px;
+}
 
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+#filter{
+    filter: grayscale(100%);
+}
 
+#filter:hover{
+    filter: none;
+}
 
+.container {
+    position: relative;
+    width: 50%;
+}
 
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-/*colours:   
-    #FFCCC6
-    #4B60AA
-    #2F104B
-    #B03477
-    #D6433E
-    #D62621
-*/
+.overlay{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #04aa6d;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.overlayText{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
