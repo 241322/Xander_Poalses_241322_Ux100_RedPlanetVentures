@@ -1,162 +1,322 @@
-#buck{
-    margin-left: 2px;
+*{
+    margin: 0px;
+    overflow: hidden;
 }
 
-footer{
-    margin-top: 200px;
-    background-color: black;
-    color: white;
-    height: 20dvh;
+body, html{
+    height: 100%;
 }
 
 body{
-    margin: 0px;
+    background-color: #1e0f17;
+    background-image: url(../Images/formBack.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.navdiv{
-    float: right;
-
-}
 nav{
-    background-color: grey;
-}
-.navdiv a{
-    text-decoration: none;
-    color: #fff;
-    background-color: rgb(65, 115, 0);
-    padding: 5px;
-    margin: 1px;
-    border: 1px solid;
-    border-color: #ffe371;
-    border-radius: 50%;
-}
-
-.navdiv a:hover{
-    background-color: rgb(42, 73, 2);
-    border-color: black;
-}
-
-.navdiv .active{
-    color: #ffe371;
-}
-
-
-.links{
-}
-
-header img{
-    width: 100%;
-    display: block;
-    margin-left:auto ;
-    margin-right: auto;
-    opacity: 75%;
+    border: 2px solid;
+    border-color: #69696979;
     border-radius: 20px;
+    background-color: #B03477;
+    margin: 1em 1em;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.navLinks{
+    float: right;
+}
+
+.navLinks a{
+    padding: 10px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #F0f1ec;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    background-color: #a761865c;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #47112e00;
+}
+
+.navLinks a:hover{
+    border: 1px solid;
+    border-color: #c978a3;
+    background-color: #74204d76;
+    transition: 300ms ease;
+}
+
+.logo{
+    float: left;
+}
+
+header{
+    
+}
+
+.headerContainer{
+    margin: 4em 2em 1em 2em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #574663c8;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.693);
+    padding: 7px;
+}
+
+.headerText{
+    margin-right: 10%;
+    color: #F0f1ec;
+    padding: 2em;
+}
+
+.headerImg{
+    box-shadow: 100px -50px 200px #2F004E;
 }
 
 
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: #04aa6d;
-    text-align: justify;
-
+.headerImg img{
+    box-shadow: 0px 50px 200px #2F004E;
 }
 
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
 
-.text{
-    padding-left: 2em;
-    padding-right: 2em;
-}
 
-.imgTextOverlay{
-    position: relative;
-    text-align: center;
 
-    color: #fff;
-    font-size: 40px;
-}
 
-.imgTextOverlay img{
-    width: 100%;
-}
 
-.bottomLeft{
-    position:absolute;
-    bottom: 8px;
-    left: 16px;
-}
-.topLeft{
-    position:absolute;
-    top: 8px;
-    left: 16px;
-}
 
-.topRight{
-    position:absolute;
-    top: 8px;
-    right: 16px;
-}
 
-.bottomRight{
-    position:absolute;
-    bottom: 8px;
-    right: 16px;
-}
 
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-#filter{
-    filter: grayscale(100%);
-}
 
-#filter:hover{
-    filter: none;
-}
 
-.container {
-    position: relative;
-    width: 50%;
-}
 
-.image{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
-.overlay{
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #04aa6d;
-}
 
-.container:hover .overlay{
-    opacity: 1;
-}
 
-.overlayText{
-    color: #fff;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
