@@ -1,6 +1,5 @@
 *{
     margin: 0px;
-    overflow: hidden;
 }
 
 body, html{
@@ -32,6 +31,7 @@ nav{
 
 .navLinks{
     float: right;
+    margin-bottom: 5px;
 }
 
 .navLinks a{
@@ -62,6 +62,10 @@ header{
     
 }
 
+h2{
+  text-transform: uppercase;
+}
+
 .headerContainer{
     margin: 4em 2em 1em 2em;
     display: flex;
@@ -88,10 +92,45 @@ header{
     box-shadow: 0px 50px 200px #2F004E;
 }
 
+.section1Container{
+  margin: 4em 2em 4em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
 
+.bookingBtn{
+  background-color: rgba(190, 144, 244, 0.372);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: #F0f1ec;
+  margin-top: 2em;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
 
+.bookingBtn:hover{
+  border: 1px solid rgba(255, 255, 255, 0.693);
+  background-color: rgba(182, 128, 244, 0.449);
+  color: #f4efdf;
+  transition: 300ms ease;
+  box-shadow: 5px 2px 30px #1e0131;
+}
 
+.mapContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.embededMap{
+  float: right;
+}
 
 
 
