@@ -7,55 +7,140 @@ body, html{
 }
 
 body{
-    background-color: #1e0f17;
-    background-image: url(../Images/formBack.png);
-    background-position: center;
+    background-color: #F9FAFD;
+    font-family: Poppins, sans-serif;
+}
+
+.headerFlex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 80dvh;
+  margin: 0;
+}
+
+#title{
+  color: #D62621;
+  font-weight: 400;
+  font-size: 400%;
+  
+}
+
+.headerSection{
+  padding: 5% 10%;
+  font-family: 'Porter Sans Block';
+  
+}
+
+#sub{
+  font-weight: 800;
+  font-size: 150%;
+  color: #4e0082;
+}
+
+.landingDiv{
+  
+  background-image: url(../images/homePageHeader.jpeg);
+  background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 95dvh;
+    
+    padding: 1px;
 }
 
 nav{
-    border: 2px solid;
-    border-color: #69696979;
-    border-radius: 20px;
-    background-color: #B03477;
-    margin: 1em 1em;
+
+    border-top: 2px solid black;
+    /* border-radius: 0px 0px 25px 25px; */
+    background-color: #b03476e3;
+    height: auto;
+    align-items: center;
+    /* margin: 1em 1em; */
+    margin: 0;
+    padding: 1em;
 }
 
 .navContainer{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content:space-between;
+    align-items: center;
     padding: 10px;
+    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .navLinks{
     float: right;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .navLinks a{
-    padding: 10px;
-    margin: 0px 5px;
+    padding: 5px;
+    margin: 0px 10px;
     text-decoration: none;
     color: #F0f1ec;
     font-family: Poppins, sans-serif;
+    font-size: 20px;
     font-weight: 600;
-    background-color: #a761865c;
-    border-radius: 20px;
     border: 1px solid;
     border-color: #47112e00;
 }
 
 .navLinks a:hover{
-    border: 1px solid;
-    border-color: #c978a3;
-    background-color: #74204d76;
+    border-bottom: 3px solid;
+    border-radius: 0px;
     transition: 300ms ease;
+    transition-duration: 500ms;
+    transition-delay: 5ms;
+}
+
+.navLinks a.active{
+  color: #6581e3;
+  font-weight: 800;
 }
 
 .logo{
-    float: left;
+    padding-left: 20px;
+}
+
+.searchContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-right: 5em;
+  border-radius: 5px;
+}
+
+.search{
+  padding-right: 1em;
+  border-right: 1px solid;
+}
+
+.shoppingCart{
+  margin-left: 5px;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.shoppingCart:hover{
+  background-color: #ece9e9;
+  transition: 500ms ease;
+}
+
+#searchBar{
+  border: medium none !important;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#searchBar:focus{
+  background-color: #ffffff;
+  border: medium solid #ffffff;
 }
 
 header{
@@ -66,39 +151,87 @@ h2{
   text-transform: uppercase;
 }
 
-.headerContainer{
-    margin: 4em 2em 1em 2em;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #574663c8;
-    border-radius: 10px;
-    border: 1.5px solid rgba(255, 255, 255, 0.693);
-    padding: 7px;
-}
-
-.headerText{
-    margin-right: 10%;
-    color: #F0f1ec;
-    padding: 2em;
-}
-
-.headerImg{
-    box-shadow: 100px -50px 200px #2F004E;
-}
-
-
-.headerImg img{
-    box-shadow: 0px 50px 200px #2F004E;
-}
 
 .section1Container{
-  margin: 4em 2em 4em 2em;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4e0082;
+  height: 1080px;
+  padding: 3em;
+  padding-left: 10%;
+}
+
+.section1Img{
+  background-image: url(../Images/marsSliderClipped1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200%;
+  /* border: 1px solid lime; */
+  border-radius: 40px;
+  height: 100%; 
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  padding: 10px;
+  /* padding: 10px 50px; */
+  margin: 2em 2em 2em auto;
+}
+
+.section1Text{
+  padding: 2em; 
+  border: 1px solid red; 
+  /* margin: 5px 20px 5px 10%; */
+  padding-left: 20px;
+  height: 1080px;
+  padding-top: 20%;
+}
+
+.section1Text p{
+  color: #F0f1ec;
+  font-size: 22px;
+  padding-right: 500px;
+  margin-top: 50px;
+}
+
+.bookNow{
+  display:block;
+  color: #F0f1ec;
+  background-color: #D62621;
+  text-decoration: none;
+  margin: 70px 70% 0px 0px;
+  padding: 2em;
+  padding-left: 80px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 1px solid #00000000;
+}
+
+.bookNow:hover{
+  border-color: #F0f1ec;
+  background-color: #b1211c;
+  transition: 300ms ease;
+  transition-duration: 600ms;
+  transition-delay: 10ms;
+}
+
+h4{
+  color: #46d3fe;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+h2{
+  text-transform: uppercase;
+  color:#F0f1ec;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.section1Img img{
+  height: 100%;
+  margin-left: 10%;
+  margin-right: auto;
 }
 
 .bookingBtn{
@@ -359,3 +492,8 @@ h2{
     font-style: italic;
   }
   
+
+@font-face {
+    font-family: 'Porter Sans Block';
+    src: url(../Fonts/porter-sans-inline-block-webfont.woff) format("woff");
+}
