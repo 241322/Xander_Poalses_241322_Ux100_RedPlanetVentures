@@ -148,17 +148,17 @@ nav{
     align-items: center;
     height: 65dvh;
     /* border: 1px solid rgb(0, 255, 51); */
-    padding: 2rem 10px 2rem 10px;
+    padding: 2rem 2em 2rem 10px;
 }
 
 .aboutText{
     width: 50rem;
-    margin-left: 28rem;
+    margin-left: 20rem;
     /* border: 1px solid red; */
 }
 
 .aboutImg{
-    margin-right: 28em;
+    margin-right: 20em;
     /* border: 1px solid blue; */
     height: 100%;
     padding-top: 4dvh;
@@ -206,13 +206,13 @@ h2{
 .right{
     background-image: url(../Images/formBack.png);
     padding: 3rem;
-    margin-right: 40rem;
+    margin-right: 35rem;
     padding-right: 5em;
     border-radius: 30px;
 }
 
 .left{
-    margin-left: 40rem;
+    margin-left: 35rem;
 }
 
 #sendIt{
