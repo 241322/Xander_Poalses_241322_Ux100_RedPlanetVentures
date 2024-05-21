@@ -30,6 +30,7 @@
                     </div>
                     <div class="shoppingCart">
                         &#128722
+                        <span class="quantity">0</span>
                     </div>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -143,7 +144,7 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -196,7 +197,7 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -249,7 +250,7 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -302,7 +303,7 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -354,7 +355,8 @@
                             <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <button type="button" class="redBtn">Book Now</button>
+                            <!-- <button type="button"  class="redBtn">Book Now</button> -->
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -439,5 +441,6 @@
             </span>
         </div>
         </footer>
+        <script src="./js/app.js"></script>
     </body>
 </html>
