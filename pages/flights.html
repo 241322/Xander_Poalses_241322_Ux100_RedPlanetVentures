@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-US-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="mars, space, travel, program">
+        <meta name="keywords" content="mars, space, travel, program, available flights, sale">
         <meta name="author" content="Xander Poalses (241322)">
             <title>Red Planet Ventures | Flights</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,17 +27,43 @@
                         <a href="../pages/contact.html" >Contact</a>
                 </div>
                 <div class="searchContainer">
-                    <div class="search"><input placeholder="&#x1F50D Search" type="text" id="searchBar" name="Search" tabindex="1">
+                    <div class="search"><input placeholder="&#x1F50D Search" type="search" id="searchBar" name="Search" tabindex="1">
                     </div>
                     <div class="shoppingCart">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         &#128722
-                        <span class="quantity">0</span>
+                        </button>
+                        <span id="cartAmount">0</span>
                     </div>
                 </div>
             </div>
             </nav>
+
+            <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title">Your Shopping Cart</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <!-- This is going to be my shopping cart modal, but it does not contain information yet because I am still figuring out how to use Js to add items to the shopping cart -->
+                                404 Cart Not found
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">
+                                Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="headerFlex">
-                <div class="headerSection">
+                <div class="headerSectionFlights">
                     <h1 id="title">Book a Flight</h1>
                 </div>
             </div> 
@@ -45,7 +72,7 @@
             <div class="headerContainer">
                 <div class="headerLeft">
                     <div class="filterDiv">
-                        <button type="button" class="filter">&#x2630  Filter </button> <button type="button" class="squared">&#11820</button><button type="button" class="squared" id="meteor">&#9732</button>
+                        <button type="button" class="filter" data-bs-toggle="modal" data-bs-target="#filter-modal">&#x2630  Filter </button> <button type="button" class="squared">&#11820</button><button type="button" class="squared" id="meteor">&#9732</button>
                     </div>
                     <div class="showing">
                         <p>Showing 1-16 of 32 results</p>
@@ -53,7 +80,7 @@
                 </div>
                 <div class="headerRight">
                     <div class="show">
-                        Show <button type="button" class="showBtn">6</button>
+                        Show <button type="button" class="showBtn" data-bs-toggle="modal" data-bs-target="#show-modal">6</button>
                     </div>
                     <div class="sortBy">
                         Sort by <button type="button" class="sortBtn">Default</button>
@@ -61,6 +88,79 @@
                 </div>
             </div>
         </header>
+
+        <div class="modal fade" id="filter-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Filter selection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-dark btn-lg">Filter by Tags</button>
+                        <div class="tagFilter">
+                            <input type="button" class="btn btn-warning btn-block mt-2" value="SALE (1)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="Luxury (3)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="Adventure (3)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="Commercial (2)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="Romance (1)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="Workshop (1)">
+                        </div>
+
+                        <button class="btn btn-dark btn-lg mt-2">Filter by rating</button>
+                        <div class="starFilter">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="1 / 5 Stars (6)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="2 / 5 Stars (6)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="3 / 5 Stars (6)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="4 / 5 Stars  (6)">
+                            <input type="button" class="btn btn-outline-secondary btn-sm mt-2" value="5 / 5 Stars (1)">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-dark">
+                            Clear Filter
+                        </button>
+                        <button class="btn btn-primary">
+                            Apply Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- this modal will be where users can adjust there filters of flights -->
+
+
+        <div class="modal fade" id="show-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Show</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="showFilter">
+                            <input type="button" class="btn btn-outline-secondary btn-lg mt-2" value="1">
+                            <input type="button" class="btn btn-outline-secondary btn-lg mt-2" value="2">
+                            <input type="button" class="btn btn-outline-secondary btn-lg mt-2" value="3">
+                            <input type="button" class="btn btn-outline-secondary btn-lg mt-2" value="4">
+                            <input type="button" class="btn btn-outline-secondary btn-lg mt-2" value="5">
+                            <input type="button" class="btn btn-secondary btn-lg mt-2" value="6">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This modal is for the "show" filer where a user can select how many flight cards they want per screen -->
+
+
+
     </div>
         <section>
             <div class="whiteFlex">
@@ -89,7 +189,12 @@
                     </p>
                     <div class="sectionButtons">
                         <div class="purpleBtn">
-                            <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
+                            
+                            <span class="-"> <button type="button" class="minusBtn" id="decrement-btn"> - </button> </span>
+                            <span class="number" id="counter-value"> 1 </span> 
+                            <span class="+"> <button type="button" class="plusBtn" id="increment-btn"> + </button> </span>
+
+
                         </div>
                         <div class="bookBtn">
                             <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
@@ -141,7 +246,11 @@
                     </p>
                     <div class="sectionButtons">
                         <div class="blueBtn">
-                            <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
+
+
+                            <span class="-"> <button type="button" class="minusBtn"> - </button> </span>
+                            <span class="number"> 1 </span> 
+                            <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
                             <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
@@ -300,7 +409,11 @@
                     </p>
                     <div class="sectionButtons">
                         <div class="purpleBtn">
-                            <span class="-"> <button type="button" class="minusBtn"> - </button> </span> <span class="number"> 1 </span> <span class="+"> <button type="button" class="plusBtn"> + </button> </span>
+
+                            <span class="-"> <button type="button" class="minusBtn" id="decrement-btn"> - </button> </span>
+                            <span class="number" id="counter-value"> 1 </span> 
+                            <span class="+"> <button type="button" class="plusBtn" id="increment-btn"> + </button> </span>
+
                         </div>
                         <div class="bookBtn">
                             <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn">
@@ -441,6 +554,8 @@
             </span>
         </div>
         </footer>
-        <script src="./js/app.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

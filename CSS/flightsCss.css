@@ -27,12 +27,11 @@ body::-webkit-scrollbar{
 
 
 
-.headerSection{
+.headerSectionFlights{
     font-family: 'Porter Sans Block';
 }
 
-
-header{
+Header{
   height: 8dvh;
   background-color: rgb(70, 12, 108);
   justify-content: center;
@@ -185,6 +184,7 @@ nav .shoppingCart span{
   font-weight: 600;
   cursor: pointer;
 }
+
 
 .squared{
   background-color: rgb(70, 12, 108);

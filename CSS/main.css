@@ -37,6 +37,8 @@ body::-webkit-scrollbar{
   
 }
 
+
+
 #sub{
   font-weight: 800;
   font-size: 120%;
@@ -50,7 +52,6 @@ body::-webkit-scrollbar{
     background-repeat: no-repeat;
     background-size: cover;
     height: 95dvh;
-    
     padding: 1px;
 }
 
@@ -239,6 +240,7 @@ h2{
   padding-left: 20px;
   height: 1080px;
   padding-top: 20%;
+  padding-bottom: 50%;
 }
 
 .section1Text p{
@@ -397,6 +399,10 @@ section{
   color:  #F0f1ec;
 }
 
+.section3Flex dt{
+  margin-bottom: 15px;
+}
+
 .section3Flex img{
   height: 600px;
   padding-top: 30px;
@@ -489,6 +495,11 @@ footer a{
 
 
 
+/* Modal */
+
+
+
+/* modal */
 
 
 
