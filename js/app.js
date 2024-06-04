@@ -13,6 +13,7 @@ incrementMars.addEventListener('click', () => {
 });
 
 decrementMars.addEventListener('click', () => {
+
     counter--;
     marsValue.innerHTML = counter;
 })
@@ -115,6 +116,31 @@ const addUpUranus = document.getElementById('book-uranus');
 const addUpMoon = document.getElementById('book-moon');
 
 addUpMars.addEventListener('click', () => {
+    cartCounter++;
+    cartAmount.innerHTML = cartCounter;
+})
+
+addUpNeptune.addEventListener('click', () => {
+    cartCounter++;
+    cartAmount.innerHTML = cartCounter;
+})
+
+addUpJupiter.addEventListener('click', () => {
+    cartCounter++;
+    cartAmount.innerHTML = cartCounter;
+})
+
+addUpSaturn.addEventListener('click', () => {
+    cartCounter++;
+    cartAmount.innerHTML = cartCounter;
+})
+
+addUpUranus.addEventListener('click', () => {
+    cartCounter++;
+    cartAmount.innerHTML = cartCounter;
+})
+
+addUpMoon.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
 })
