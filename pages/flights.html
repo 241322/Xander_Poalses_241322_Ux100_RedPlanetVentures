@@ -24,6 +24,7 @@
                 <div class="navLinks">
                         <a  href="../Index.html" >Home</a>
                         <a class="active" href="../pages/flights.html">Flights</a>
+                        <a href="../pages/about.html">About</a>
                         <a href="../pages/contact.html" >Contact</a>
                 </div>
                 <div class="searchContainer">
@@ -47,13 +48,16 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>
+                            <p class="text-muted lead text-center mt-3 mb-2 text-sm">
                                 <!-- This is going to be my shopping cart modal, but it does not contain information yet because I am still figuring out how to use Js to add items to the shopping cart -->
-                                404 Cart Not found
+                                your cart is currently empty
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-primary">
+                            <button class="btn btn-outline-secondary btn-sm" onclick="clearCart()">
+                                Clear Cart
+                            </button>
+                            <button class="btn btn-primary" onclick="checkout()">
                                 Checkout
                             </button>
                         </div>
@@ -162,7 +166,7 @@
 
 
     </div>
-        <section>
+        <section class="whiteSection">
             <div class="whiteFlex">
                 <div class="sectionImg">
                     <img src="../Images/flighhtMars.png">
@@ -197,7 +201,7 @@
 
                         </div>
                         <div class="bookBtn">
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn"  id="book-mars">
+                            <input type="button" value="Book Now" onclick="addMarsToCart()" class="redBtn"  id="book-mars" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -253,7 +257,7 @@
                             <span class="+"> <button type="button" class="plusBtn" id="increment-neptune"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-neptune">
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-neptune" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -276,7 +280,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="whiteSection">
             <div class="whiteFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightJupiter.png">
@@ -306,7 +310,7 @@
                             <span class="-"> <button type="button" class="minusBtn" id="decrement-jupiter"> - </button> </span> <span class="number" id="jupiter-value"> 1 </span> <span class="+"> <button type="button" class="plusBtn" id="increment-jupiter"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-jupiter">
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-jupiter" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -359,7 +363,7 @@
                             <span class="-"> <button type="button" class="minusBtn" id="decrement-saturn"> - </button> </span> <span class="number" id="saturn-value"> 1 </span> <span class="+"> <button type="button" class="plusBtn" id="increment-saturn"> + </button> </span>
                         </div>
                         <div class="bookBtn">
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-saturn">
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-saturn" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -382,7 +386,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="whiteSection">
             <div class="whiteFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightUranus.png">
@@ -416,7 +420,7 @@
 
                         </div>
                         <div class="bookBtn">
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-uranus">
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-uranus" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">
@@ -469,7 +473,7 @@
                         </div>
                         <div class="bookBtn">
                             <!-- <button type="button"  class="redBtn">Book Now</button> -->
-                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-moon">
+                            <input type="button" value="Book Now" onclick="changeQuantity()" class="redBtn" id="book-moon" data-bs-toggle="modal" data-bs-target="#cart-modal">
                         </div>
                     </div>
                     <div class="metaContent">

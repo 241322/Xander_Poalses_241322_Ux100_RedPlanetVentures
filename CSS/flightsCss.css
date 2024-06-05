@@ -623,7 +623,54 @@ footer a{
 
 
 
+@media (max-width:600px){
+  .navContainer{
+      flex-direction: column;
+  }
+  .landingDiv{
+    flex-direction: column;
+  }
+  .headerContainer{
+    flex-direction: column;
+  }
+  .headerFlex{
+    flex-direction: column;
+  }
+  .headerSectionFlights{
+    flex-direction: column;
+  }
+  .purple{
+    flex-direction: column;
+  }
 
+  .whiteSection{
+    flex-direction: column;
+  }
+  .whiteFlex{
+    flex-direction: column;
+  }
+  .purpleFlex{
+    flex-direction: column;
+  }
+  .sectionImg{
+    flex-direction: column;
+  }
+  .sectionContent{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:300px){
+  .stars{
+    flex-direction: column;
+  }
+  .ratings{
+    flex-direction: column;
+  }
+}
 
 
 
