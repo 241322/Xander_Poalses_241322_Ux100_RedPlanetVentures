@@ -506,8 +506,43 @@ footer a{
 
 
 
+/* About */
+#aboutNav{
+  
+}
 
 
+
+
+.aboutHeadDiv{
+    background-color: #4e0082;
+    height: 5dvh;
+    padding: 1px;
+}
+
+.aboutHeaderFlex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.about1Text{
+  padding: 10px; 
+  /* border: 1px solid red;  */
+  margin: 5px 20px 5px 10%;
+  padding-left: 20px;
+  height: 1080px;
+  padding-top: 20%;
+  padding-bottom: 50%;
+}
+
+.about1Text p{
+  color: #F0f1ec;
+  font-size: 22px;
+  padding-right: 500px;
+  margin-top: 50px;
+}
 
 
 
