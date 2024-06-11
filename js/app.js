@@ -1,3 +1,10 @@
+function zoom() {
+    document.body.style.zoom = "90%"
+}
+
+
+
+
 let counter = 0;
 let cartCounter = 0;
 

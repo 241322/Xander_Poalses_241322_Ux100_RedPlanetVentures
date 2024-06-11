@@ -515,9 +515,12 @@ footer a{
 
 
 .aboutHeadDiv{
-    background-color: #4e0082;
-    height: 5dvh;
-    padding: 1px;
+  background-image: url(../Images/headerbackBack.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80dvh;
+  padding: 1px;
 }
 
 .aboutHeaderFlex{
@@ -525,6 +528,7 @@ footer a{
   justify-content: flex-start;
   align-items: flex-end;
   margin: 0;
+  margin-top: 10dvh;
 }
 
 .about1Text{
