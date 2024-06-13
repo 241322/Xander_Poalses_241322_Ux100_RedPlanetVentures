@@ -407,7 +407,7 @@ nav .shoppingCart span{
 }
 
 .bookBtn{
-  margin-right: 35rem;
+  margin-right: 53rem;
 }
 
 .redBtn{
@@ -446,7 +446,7 @@ nav .shoppingCart span{
 
 .reviews{
   /* border: 1px solid green; */
-  margin-right: 37.5rem;
+  margin-right: 55rem;
   font-size: 12px;
   cursor: pointer;
 }
@@ -584,8 +584,31 @@ footer a{
 }
 
 
+#searchList{
+  list-style: none;
+}
+
+.planets{
+  border-bottom: 1px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.planets:last-child {
+  border-bottom: none;
+}
 
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 

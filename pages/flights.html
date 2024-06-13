@@ -28,7 +28,9 @@
                         <a href="../pages/contact.html" >Contact</a>
                 </div>
                 <div class="searchContainer">
-                    <div class="search"><input placeholder="&#x1F50D Search" type="search" id="searchBar" name="Search" tabindex="1">
+                    <div class="search">
+                        <input placeholder="&#x1F50D Search" type="btn" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()" data-bs-toggle="modal" data-bs-target="#search-modal">
+
                     </div>
                     <div class="shoppingCart">
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#cart-modal">
@@ -39,6 +41,30 @@
                 </div>
             </div>
             </nav>
+
+            <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title"><input placeholder="&#x1F50D Search" type="text" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()">
+
+                                
+                            </div></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul id="searchList">
+                                <li class="planets">Mars</li>
+                                <li class="planets">Neptune</li>
+                                <li class="planets">Jupiter</li>
+                                <li class="planets">Saturn</li>
+                                <li class="planets">Uranus</li>
+                                <li class="planets">Moon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
 
             <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
                 <div class="modal-dialog">
@@ -71,7 +97,7 @@
                     <h1 id="title">Book a Flight</h1>
                 </div>
             </div> 
-        
+        </div>
         <header>
             <div class="headerContainer">
                 <div class="headerLeft">

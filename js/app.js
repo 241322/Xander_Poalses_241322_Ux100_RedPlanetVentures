@@ -178,3 +178,19 @@ let saturn = "R " + 40000
 let uranus = "R " + 50000
 let moon = "R " + 15000
 //this is the value of each of the tickets put into their individual variables
+
+
+function search_planet() {
+    let input = document.getElementById('searchBar').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('planets');
+  
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display = "none";
+      }
+      else {
+        x[i].style.display = "list-item";
+      }
+    }
+  }
