@@ -55,6 +55,17 @@ body::-webkit-scrollbar{
     padding: 1px;
 }
 
+.aboutLandingDiv{
+  
+  background-image: url(../Images/headerbackBack.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30dvh;
+  padding: 1px;
+
+}
+
 nav{
 
     /* border-top: 2px solid black; */
@@ -121,8 +132,23 @@ nav{
 }
 
 .search{
-  padding-right: 1em;
+  padding-right: 8em;
   border-right: 1px solid;
+}
+
+.search:hover{
+  cursor: pointer;
+
+}
+
+#fakeSearchBar{
+  border: none;
+  background-color: #ffffff;
+}
+
+#fakeSearchBar:hover{
+  cursor: pointer;
+
 }
 
 .shoppingCart{
@@ -162,6 +188,47 @@ nav .shoppingCart span{
   border: medium solid #ffffff;
 }
 
+#searchList{
+  list-style: none;
+}
+
+.planets{
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.planets:last-child {
+  border-bottom: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.searchLink{
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: slategray;
+  background-color: lightgray;
+  padding: 2px 20px;
+  margin-top: 15px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+}
+
+
 header{
     
 }
@@ -181,20 +248,86 @@ h2{
   padding-left: 10%;
 }
 
-.section1Img{
+.carousel{
+  position: relative;
+  /* background-image: url(../Images/marsSliderClipped1.png); */
+  /* display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  width: 180%;
+
+  border-radius: 40px;
+  /* height: 100%;  */
+  /* justify-content: space-between;
+  align-items: center; */
+
+  /* margin: 3em 2em 3em auto; */
+}
+
+.carousel__item{
+  height: 900px;
+  padding: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+}
+
+.carousel__item--selected{
+  display: block;
+}
+
+.carousel__nav{
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+
+#content1{
   background-image: url(../Images/marsSliderClipped1.png);
-  display: flex;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 200%;
-  /* border: 1px solid lime; */
+  border: 0px solid white;
   border-radius: 40px;
-  height: 100%; 
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 10px 50px; */
-  margin: 3em 2em 3em auto;
+}
+
+#content2{
+  background-image: url(../Images/marsSliderClipped2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0px solid white;
+  border-radius: 40px;
+}
+
+#content3{
+  background-image: url(../Images/marsSliderClipped3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0px solid white;
+  border-radius: 40px;
+}
+
+.carousel__button--selected{
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .left img, .right img{
@@ -249,6 +382,18 @@ h2{
   padding-right: 500px;
   margin-top: 50px;
 }
+
+.aboutSection1Container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #4e0082; */
+  height: 1080px;
+  padding: 2em;
+  padding-left: 10%;
+  margin-top: 300px;
+}
+
 
 .bookNow{
   display:block;
@@ -521,6 +666,7 @@ footer a{
   background-size: cover;
   height: 80dvh;
   padding: 1px;
+
 }
 
 .aboutHeaderFlex{
@@ -541,8 +687,12 @@ footer a{
   padding-bottom: 50%;
 }
 
+.about1Text h2{
+  color: #4e0082;
+}
+
 .about1Text p{
-  color: #F0f1ec;
+  color: #000000;
   font-size: 22px;
   padding-right: 500px;
   margin-top: 50px;

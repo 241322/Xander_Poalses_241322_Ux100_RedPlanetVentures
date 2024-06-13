@@ -29,7 +29,7 @@
                 </div>
                 <div class="searchContainer">
                     <div class="search">
-                        <input placeholder="&#x1F50D Search" type="btn" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()" data-bs-toggle="modal" data-bs-target="#search-modal">
+                        <button placeholder="" type="btn" id="fakeSearchBar" name="search" tabindex="1" data-bs-toggle="modal" data-bs-target="#search-modal">&#x1F50D Search</button>
 
                     </div>
                     <div class="shoppingCart">
@@ -49,18 +49,21 @@
                             <h5 class="modal-title" id="modal-title"><input placeholder="&#x1F50D Search" type="text" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()">
 
                                 
-                            </div></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            
+                        
                         <div class="modal-body">
                             <ul id="searchList">
-                                <li class="planets">Mars</li>
-                                <li class="planets">Neptune</li>
-                                <li class="planets">Jupiter</li>
-                                <li class="planets">Saturn</li>
-                                <li class="planets">Uranus</li>
-                                <li class="planets">Moon</li>
+                                <li class="planets"><a href="../pages/flights.html#mars" class="searchLink">Mars | The Classic Experience</a></li>
+                                <li class="planets"><a href="../pages/flights.html#neptune" class="searchLink">Neptune | The Cosmic Dive</a></li>
+                                <li class="planets"><a href="../pages/flights.html#jupiter" class="searchLink">Jupiter | The Giant's Journey</a></li>
+                                <li class="planets"><a href="../pages/flights.html#saturn" class="searchLink">Saturn | Ring Around a Saturn</a></li>
+                                <li class="planets"><a href="../pages/flights.html#uranus" class="searchLink">Uranus | The Uncharted</a></li>
+                                <li class="planets"><a href="../pages/flights.html#moon" class="searchLink">Moon Meander</a></li>
+                                
                             </ul>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -253,6 +256,7 @@
         </a>
         </section>
         <section class="purple">
+            <a name="neptune"></a>
             <div class="purpleFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightNeptune.png">
@@ -309,6 +313,7 @@
             </div>
         </section>
         <section class="whiteSection">
+            <a name="jupiter"></a>
             <div class="whiteFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightJupiter.png">
@@ -362,6 +367,7 @@
             </div>
         </section>
         <section class="purple">
+            <a name="saturn"></a>
             <div class="purpleFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightSaturn.png">
@@ -415,6 +421,7 @@
             </div>
         </section>
         <section class="whiteSection">
+            <a name="uranus"></a>
             <div class="whiteFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightUranus.png">
@@ -472,6 +479,7 @@
             </div>
         </section>
         <section class="purple">
+            <a name="moon"></a>
             <div class="purpleFlex">
                 <div class="sectionImg">
                     <img src="../Images/flightMoon.png">
@@ -542,15 +550,19 @@
                         <dt>Company</dt>
                         <dd>
                             
-                                <a href="/Index.html">Home</a>
-                        </dd>
-                        <dd>
-                                <a href="/pages/flights.html" target="_blank">Flights</a>
-                        </dd>
-                        <dd>
-                                <a href="/pages/contact.html" target="_blank">Contact Us</a>
-                            
-                        </dd>
+                            <a href="../Index.html">Home</a>
+                    </dd>
+                    <dd>
+                            <a href="../pages/about.html">Flights</a>
+                    </dd>
+                    <dd>
+                        <a href="../pages/about.html">About Us</a>
+                    
+                </dd>
+                    <dd>
+                            <a href="../pages/contact.html">Contact Us</a>
+                        
+                    </dd>
                     </dl>
                 </div>
 

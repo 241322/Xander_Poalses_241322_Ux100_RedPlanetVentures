@@ -28,7 +28,8 @@
                         <a class="active" href="../pages/contact.html" >Contact</a>
                 </div>
                 <div class="searchContainer">
-                    <div class="search"><input placeholder="&#x1F50D Search" type="search" id="searchBar" name="Search" tabindex="1">
+                    <div class="search">
+                        <button placeholder="" type="btn" id="fakeSearchBar" name="search" tabindex="1" data-bs-toggle="modal" data-bs-target="#search-modal">&#x1F50D Search</button>
                     </div>
                     <div class="shoppingCart">
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#cart-modal">
@@ -39,6 +40,32 @@
                 </div>
             </div>
             </nav>
+
+            <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title"><input placeholder="&#x1F50D Search" type="text" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()">
+
+                                
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            
+                        
+                        <div class="modal-body">
+                            <ul id="searchList">
+                                <li class="planets"><a href="../pages/flights.html#mars" class="searchLink">Mars | The Classic Experience</a></li>
+                                <li class="planets"><a href="../pages/flights.html#neptune" class="searchLink">Neptune | The Cosmic Dive</a></li>
+                                <li class="planets"><a href="../pages/flights.html#jupiter" class="searchLink">Jupiter | The Giant's Journey</a></li>
+                                <li class="planets"><a href="../pages/flights.html#saturn" class="searchLink">Saturn | Ring Around a Saturn</a></li>
+                                <li class="planets"><a href="../pages/flights.html#uranus" class="searchLink">Uranus | The Uncharted</a></li>
+                                <li class="planets"><a href="../pages/flights.html#moon" class="searchLink">Moon Meander</a></li>
+                                
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
             <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
                 <div class="modal-dialog">
@@ -109,18 +136,18 @@
                 <div class="right">
                     <h2 id="sendIt">send us a message </h2>
                     <h4>Your name</h4>
-                    <input placeholder="Abc" type="text" name="Name" tabindex="1" class="inputs">
+                    <input placeholder="Abc" type="text" name="Name" tabindex="1" class="inputs" id="contactName">
 
                     <h4>Email address</h4>
-                    <input placeholder="Abc@def.com" type="email" name="Name" tabindex="1" class="inputs">
+                    <input placeholder="Abc@def.com" type="email" name="Name" tabindex="1" class="inputs" id="contactEmail">
 
                     <h4>Subject</h4>
-                    <input placeholder="This is optional" type="text" name="Name" tabindex="1" class="inputs">
+                    <input placeholder="This is optional" type="text" name="Name" tabindex="1" class="inputs" id="contactSubject">
 
                     <h4>Message</h4>
                     <input placeholder="Hi! I'd like to ask about ..." type="text" name="Name" tabindex="1" class="inputs" id="message">
 
-                    <input placeholder="Submit" type="submit" name="submit" class="submit">
+                    <input placeholder="Submit" type="submit" name="submit" class="submit" onclick="submitContactForm()">
                 </div>
             </div>
         </section>
@@ -147,13 +174,17 @@
                         <dt>Company</dt>
                         <dd>
                             
-                                <a href="/Index.html">Home</a>
+                                <a href="../Index.html">Home</a>
                         </dd>
                         <dd>
-                                <a href="/pages/flights.html" target="_blank">Flights</a>
+                                <a href="../pages/about.html">Flights</a>
                         </dd>
                         <dd>
-                                <a href="/pages/contact.html" target="_blank">Contact Us</a>
+                            <a href="../pages/about.html">About Us</a>
+                        
+                    </dd>
+                        <dd>
+                                <a href="../pages/contact.html">Contact Us</a>
                             
                         </dd>
                     </dl>

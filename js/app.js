@@ -2,7 +2,43 @@ function zoom() {
     document.body.style.zoom = "90%"
 }
 
+// Carousel
+document.querySelectorAll(".carousel").forEach(carousel => {
+    const items = carousel.querySelectorAll(".carousel__item");
+    const buttonsHtml = Array.from(items, () => {
+        return `<span class="carousel__button"></span>`;
+    });
 
+    carousel.insertAdjacentHTML("beforeend", `
+        <div class="carousel__nav">
+            ${ buttonsHtml.join("") }
+        </div>
+    `);
+
+    const buttons = carousel.querySelectorAll(".carousel__button");
+
+    buttons.forEach((button, i) => {
+        button.addEventListener("click", () => {
+            // unselect all the items
+            items.forEach(item => item.classList.remove("carousel__item--selected"));
+            button.forEach(button => button.classList.remove("carousel__button--selected"));
+
+            items[i].classList.add("carousel__item--selected");
+            button.classList.add("carousel__button--selected");
+        });
+    });
+    // auto select first item
+    items[0].classList.add("carousel__item--selected");
+    buttons[0].classList.add("carousel__button--selected");
+});
+
+function submitContactForm() 
+{
+    const contactName = document.getElementById('contactName').value;
+    const contactEmail = document.getElementById('contactEmail').value;
+    const contactSubject = document.getElementById('contactSubject').value;
+    alert(`Thank you, ${contactName}. We have received your message about: "${contactSubject}"`);
+}
 
 
 let counter = 0;
@@ -23,7 +59,7 @@ decrementMars.addEventListener('click', () => {
 
     counter--;
     marsValue.innerHTML = counter;
-})
+});
 
 
 // Neptune
@@ -71,7 +107,7 @@ incrementSaturn.addEventListener('click', () => {
 decrementSaturn.addEventListener('click', () => {
     counter--;
     saturnValue.innerHTML = counter;
-})
+});
 
 
 
@@ -88,7 +124,7 @@ incrementUranus.addEventListener('click', () => {
 decrementUranus.addEventListener('click', () => {
     counter--;
     uranusValue.innerHTML = counter;
-})
+});
 
 
 
@@ -106,7 +142,7 @@ incrementMoon.addEventListener('click', () => {
 decrementMoon.addEventListener('click', () => {
     counter--;
     moonValue.innerHTML = counter;
-})
+});
 
 
 
@@ -125,32 +161,32 @@ const addUpMoon = document.getElementById('book-moon');
 addUpMars.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 addUpNeptune.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 addUpJupiter.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 addUpSaturn.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 addUpUranus.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 addUpMoon.addEventListener('click', () => {
     cartCounter++;
     cartAmount.innerHTML = cartCounter;
-})
+});
 
 
 
@@ -171,12 +207,12 @@ addUpMoon.addEventListener('click', () => {
 
 // this Js is for the quantity counter on the flights page to adjust how many tickets the user wants to buy, but at the moment it only works on "The Classic Mars Experience" because I used .getElementById because I am struggling to figure out how to make it work with classes instead of IDs  
 
-let mars = "R " + 25000
-let neptune = "R " + 45000
-let jupiter = "R " + 65000
-let saturn = "R " + 40000
-let uranus = "R " + 50000
-let moon = "R " + 15000
+let mars = "R " + 25000;
+let neptune = "R " + 45000;
+let jupiter = "R " + 65000;
+let saturn = "R " + 40000;
+let uranus = "R " + 50000;
+let moon = "R " + 15000;
 //this is the value of each of the tickets put into their individual variables
 
 
@@ -184,13 +220,29 @@ function search_planet() {
     let input = document.getElementById('searchBar').value
     input = input.toLowerCase();
     let x = document.getElementsByClassName('planets');
-  
+
     for (i = 0; i < x.length; i++) {
-      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
         x[i].style.display = "none";
-      }
-      else {
-        x[i].style.display = "list-item";
-      }
     }
-  }
+    else {
+        x[i].style.display = "list-item";
+    }
+    }
+}
+
+
+
+// Carousel
+document.querySelectorAll(".carousel").forEach(carousel => {
+    const items = carousel.querySelectorAll(".carousel__item");
+    const buttonsHtml = Array.from(items, () => {
+        return `<span class="carousel__button"></span>`;
+    });
+
+    carousel.insertAdjacentHTML("beforeend", `
+        <div class="carousel__nav">
+            ${ buttonsHtml.join("") }
+        </div>
+    `);
+});

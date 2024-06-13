@@ -28,7 +28,8 @@
                 <a href="../pages/contact.html" >Contact</a>
         </div>
         <div class="searchContainer">
-            <div class="search"><input placeholder="&#x1F50D Search" type="search" id="searchBar" name="Search" tabindex="1">
+            <div class="search">
+                <button placeholder="" type="btn" id="fakeSearchBar" name="search" tabindex="1" data-bs-toggle="modal" data-bs-target="#search-modal">&#x1F50D Search</button>
             </div>
             <div class="shoppingCart">
                 <button class="btn" data-bs-toggle="modal" data-bs-target="#cart-modal">
@@ -39,6 +40,34 @@
         </div>
     </div>
     </nav>
+<!-- searchModal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title"><input placeholder="&#x1F50D Search" type="text" id="searchBar" name="search" tabindex="1" onkeyup="search_planet()">
+
+                        
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    
+                
+                <div class="modal-body">
+                    <ul id="searchList">
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#mars" class="searchLink">Mars | The Classic Experience</a></li>
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#neptune" class="searchLink">Neptune | The Cosmic Dive</a></li>
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#jupiter" class="searchLink">Jupiter | The Giant's Journey</a></li>
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#saturn" class="searchLink">Saturn | Ring Around a Saturn</a></li>
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#uranus" class="searchLink">Uranus | The Uncharted</a></li>
+                        <li class="planets"><a data-bs-dismiss="modal" href="../pages/flights.html#moon" class="searchLink">Moon Meander</a></li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
 <!-- modal -->
     <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-dialog">
@@ -71,9 +100,10 @@
     </div>
         <section>
             <div class="section1Container">
-                <div class="section1Img">
-                    <div class="left"><img src="/Images/arrowLeftWhite.png"></div>
-                    <div class="right"><img src="/Images/arrowRightWhite.png"> </div>
+                <div class="carousel">
+                    <div class="carousel__item" id="content1"></div>
+                    <div class="carousel__item" id="content2"></div>
+                    <div class="carousel__item" id="content3"></div>
                 </div>
 
                 
@@ -175,10 +205,14 @@
                                 <a href="/Index.html">Home</a>
                         </dd>
                         <dd>
-                                <a href="/pages/flights.html" target="_blank">Flights</a>
+                                <a href="./pages/flights.html">Flights</a>
                         </dd>
                         <dd>
-                                <a href="/pages/contact.html" target="_blank">Contact Us</a>
+                            <a href="./pages/about.html">About Us</a>
+                        
+                    </dd>
+                        <dd>
+                                <a href="./pages/contact.html">Contact Us</a>
                             
                         </dd>
                     </dl>

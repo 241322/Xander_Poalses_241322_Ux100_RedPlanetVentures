@@ -116,8 +116,22 @@ nav{
 }
 
 .search{
-    padding-right: 1em;
+    padding-right: 8em;
     border-right: 1px solid;
+}
+
+.search:hover{
+  cursor: pointer;
+
+}
+
+#fakeSearchBar{
+  border: none;
+}
+
+#fakeSearchBar:hover{
+  cursor: pointer;
+
 }
 
 .shoppingCart{
@@ -155,6 +169,19 @@ nav .shoppingCart span{
 #searchBar:focus{
     background-color: #ffffff;
     border: medium solid #ffffff;
+}
+
+
+#fakeSearchBar{
+  border: medium none !important;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+#fakeSearchBar:focus{
+  background-color: #ffffff;
+  border: medium solid #ffffff;
 }
 
 
@@ -589,7 +616,9 @@ footer a{
 }
 
 .planets{
-  border-bottom: 1px solid #ccc;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -608,6 +637,18 @@ footer a{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.searchLink{
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: slategray;
+  background-color: lightgray;
+  padding: 2px 20px;
+  margin-top: 15px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
 }
 
 
